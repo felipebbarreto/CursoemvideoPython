@@ -1,0 +1,21 @@
+n1 = int(input('Digite o primeiro termo da progressão aritimética: '))
+r = int(input('Digite a razão dessa P.A.: '))
+c = 0
+pa = n1
+tot = 0
+print('{} ->'.format(n1), end='')
+while c != 10:
+    pa += r
+    print('{} ->'.format(pa), end='')
+    c += 1
+    tot += 1
+t = int(input(' Você quer ver mais quantos termos?: '))
+while t != 0:
+    c = 0
+    while c != t:
+        pa += r
+        print('{} ->'.format(pa), end='')
+        c += 1
+        tot += 1
+    t = int(input(' Você quer ver mais quantos termos?: '))
+print('Foram apresentados {} termos da P.A.'.format(tot))

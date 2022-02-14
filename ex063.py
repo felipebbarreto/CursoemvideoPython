@@ -1,0 +1,12 @@
+n = int(input('Insira o número de elementos da sequência de FIBONACCI que você deseja: '))
+f = 0
+n1 = 0
+n2 = 1
+n3 = 0
+print('{} \033[32m->\033[m {} \033[32m->\033[m '.format(n1,n2), end='')
+while n != 0:
+     n3 = n1 + n2
+     n += -1
+     print('{} \033[32m->\033[m '.format(n3), end='')
+     n1 = n2
+     n2 = n3

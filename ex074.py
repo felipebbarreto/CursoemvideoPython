@@ -1,0 +1,13 @@
+from random import randint
+tupla = (randint(0,60),randint(0,60),randint(0,60),randint(0,60),randint(0,60),randint(0,60))
+print('-='*20)
+print('JOGO DA MEGA SENA')
+print('-='*20)
+print(tupla)
+print('-='*20)
+print(sorted(tupla))
+print('-='*20)
+print(f'O maior valor é {max(tupla)}')
+print('-='*20)
+print(f'O menor valor é {min(tupla)}')
+print('-='*20)

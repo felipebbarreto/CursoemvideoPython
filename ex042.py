@@ -1,0 +1,14 @@
+r1 = float(input('Insira o comprimento de uma reta: '))
+r2 = float(input('Insira o comprimento de mais uma reta: '))
+r3 = float(input('Insira o comprimento outra reta: '))
+print('Você inseriu o comprimentos das retas {:.0f}, {:.0f} e {:.0f}'.format(r1,r2,r3))
+if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2):
+    print('\033[32mEsse conjunto de retas formam um triângulo!')
+    if r1 == r2 == r3:
+        print('O triângulo é EQUILÁTERO')
+    elif (r1 == r2 and r1 != r3) or ( ( r2 == r3 ) and r2 != r1 ) or (r1 == r3 and r2 != r1):
+        print('O triângulo é ISÓSCELES')
+    elif r1 != r2 and r1 != r3:
+        print('O triângulo é ESCALENO')
+else:
+    print('\033[31mEsse conjunto de retas não formam um triângulo')
